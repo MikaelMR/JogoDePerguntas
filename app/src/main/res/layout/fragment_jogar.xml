@@ -41,17 +41,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:onClick="mPularListener"
         android:text="@string/pular"
         app:layout_constraintBottom_toTopOf="@+id/buttonCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonExibirResposta"
-        />
+        app:layout_constraintStart_toEndOf="@+id/buttonExibirResposta" />
 
     <Button
         android:id="@+id/buttonExibirResposta"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/white"
+        android:onClick="mExibirListener"
         android:text="@string/exibir_resposta"
         app:layout_constraintBottom_toBottomOf="@+id/buttonPular"
         app:layout_constraintEnd_toStartOf="@+id/buttonPular"
@@ -63,7 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:onClick="buttonCadastrarJogarFragment"
+        android:onClick="mCadastrarListener"
         android:text="@string/cadastrar_perguntas_e_respostas"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
